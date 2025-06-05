@@ -19,11 +19,11 @@ go build main.go
 ```
 
 It accepts the following inputs:
--i input json
--o output filename (will take directory name if none provided, optional)
--map path to the mapping file described above 
--cs allows you to provide the cs (spherical aberration) value for your instrument (optional)
--gain_flip_rotate allows to provide instructions on gainreference flipping if needed (optional)
+- -i input json
+- -o output filename (will take directory name if none provided, optional)
+- -map path to the mapping file described above 
+- -cs allows you to provide the cs (spherical aberration) value for your instrument (optional)
+- -gain_flip_rotate allows to provide instructions on gainreference flipping if needed (optional)
 
 
 If you want to use it inside of another go application you can also just import it as a module using 
