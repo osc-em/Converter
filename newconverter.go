@@ -61,7 +61,6 @@ func Convert(jsonin []byte, contentFlag string, p1Flag string, p2Flag string, oF
 	cleaned := CleanMap(out)
 
 	pretty, _ := json.MarshalIndent(cleaned, "", "  ")
-	fmt.Println(string(pretty))
 	if oFlag == "" {
 		cwd, _ := os.Getwd()
 		cut := strings.Split(cwd, string(os.PathSeparator))
